@@ -7,7 +7,7 @@ def gerar_senha(tipo, tam):  # Função para o usuário criar a senha antes de l
             s = randint(48, 57)
             senha = senha + chr(s)
         return senha
-    elif tipo == 'b':
+    elif tipo == 'b':  # Condição para gerar o tipo de senha Numérica
         for i in range(tam):
             if i % 2 == 0:
                 s = randint(65, 90)
