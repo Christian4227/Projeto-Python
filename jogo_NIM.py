@@ -2,7 +2,7 @@
 
 def player_joga(n, m):
     pecas = int(input("Digite o número de peças que você quer retirar. "))
-    if pecas > m:
+    if pecas > m or pecas > n or pecas == 0:
         print("Jogada inválida. Tente novamente.")
         return player_joga(n, m)
     else:
